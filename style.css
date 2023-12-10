@@ -1,0 +1,251 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* header section */
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-weight: 500;
+}
+.navbar-brand span {
+    font-size: 22px;
+    background-color: #3498db;
+    color: #fff;
+    display: inline-block;
+    width: 22px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    margin-right: 7px;
+}
+.jihad-header{
+
+}
+.main-header{
+
+}
+/* slider section */
+.slider-section{
+    background: url(img/background3.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 2;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.slider-caption{
+    color: #fff;
+}
+.slider-caption h4 {
+    margin-bottom: 14px;
+}
+.slider-caption h2 {
+    margin-bottom: 16px;
+    
+}
+.slider-caption .form-control{
+    padding: 8px 4px;
+}
+.slider-caption .btn{
+    background-color: #16a085;
+    font-weight: 600;
+}
+/* about section */
+.about-section{
+    background-color:#f7f9ff;
+}
+.about-text-left{
+    margin-top: 118px;
+}
+/* feature section */
+.feature-item{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.left-img-sec{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.left-img-sec img {
+    height: 100%;
+    max-width: inherit;
+    width: auto ! important;
+    position: relative;
+    left: -100px;
+}
+.right-text-sec{
+    width: 60%;
+    padding: 25px;
+}
+/* portfolio hover */
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 128, 185,.6);
+    transition: .4s;
+}
+.portfolio-item:hover a::after{
+    visibility: visible;
+    opacity: 1;
+}
+.min-bg{
+    background-color: #f7f9ff;
+}
+/* prising */
+.prising-item{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    border-radius: 5px;
+}
+.prising-item h1{
+    margin-left: 29px;
+    margin-top: 10px;
+}
+.prising-item h5{
+    margin-left: 34px;
+}
+.prising-item ul{
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+    list-style: none;
+}
+.prising-item ul li{
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    margin-left: 10px;
+}
+.prising-item ul li span{
+    margin-left: 34px;
+}
+.prising-item a{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    font-size: 20px;
+    color: #657be0;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 9px 22px;
+    border-color: #657be0;
+    
+}
+.prising-item ul li span i {
+    margin-right: 13px;
+    width: 14px;
+}
+/* testimonial section */
+.author-info{
+    width: 220px;
+    margin: auto;
+}
+.author-info img{
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+.user-details{
+    position: relative;
+    top: 20px;
+}
+.testimonial-item {
+	width: 100%;
+	margin:auto;
+}
+
+/* about section */
+
+.about-item{
+    margin-top: 75px;
+}
+.about-item .card{}
+.about-item .card img{
+    width: 100px;
+    height: auto;
+    margin-top: -42px;
+    margin-left: 19px;
+}
+
+/* contact us */
+
+.contact-form .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    padding: 45px;
+}
+
+
+/* app */
+.app{
+    border: 2px solid #16a085;
+    padding: 9px 23px;
+    color: #16a085;
+    transition: .3s;
+    font-weight: bold;
+}
+.app span{
+    margin-right: 4px;
+}
+.app:hover{
+    background-color: #16a085;
+    color: white;
+}
+
+.google{
+    background-color: #16a085;
+    padding: 9px 23px;
+    color: white;
+    transition: .3s;
+    font-weight: bold;
+}
+.google span{
+    margin-right: 4px;
+}
+.google:hover{
+    background-color: black;
+    color: white;
+}
+
+.app-image img{
+    height: 471px;
+    width: auto;
+}    
+.app-caption {
+	width: 100%;
+	margin: auto;
+}
+
+/* responsive css */
+@media (max-width:992px){
+    .slider-caption .form-control {
+     
+        margin-bottom: 9px;
+    }
+    .about-text-left {
+        margin-top: 0;
+    } 
+    .app {
+       
+        margin-bottom: 10px;
+    }
+}
